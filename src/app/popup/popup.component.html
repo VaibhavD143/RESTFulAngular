@@ -1,0 +1,22 @@
+<h2 mat-dialog-title>{{data.name}}</h2>
+<mat-dialog-content class="">
+  <mat-divider>
+  </mat-divider>
+  <mat-grid-list cols="6" rowHeight="50px" gutterSize="1px"   width="100%">
+    <div *ngFor="let col of cols" >
+      <mat-grid-tile style="border-left: solid 1px grey;">
+        <h3 style="font-weight: bold;">{{col}}</h3>
+      </mat-grid-tile>
+      <mat-grid-tile >
+        <h3 style="font-weight: bolder;">:</h3>
+      </mat-grid-tile>
+      <mat-grid-tile style="border-right: solid 2px grey;">
+        <h3>{{data[col]}}</h3>
+      </mat-grid-tile>
+    </div>
+  </mat-grid-list>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-button mat-dialog-close>Cancel</button>
+  <button mat-button [mat-dialog-close]="true" cdkFocusInitial>Install</button>
+</mat-dialog-actions>

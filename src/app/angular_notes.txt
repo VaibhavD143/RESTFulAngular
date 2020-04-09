@@ -1,0 +1,4 @@
+- Take a snapshot of angular versions;
+
+- Every componenet of Angular Material belogns to particular module which needs to be imported into app.module.ts file
+    i.e to use DataTable import 'MatTableModule';
