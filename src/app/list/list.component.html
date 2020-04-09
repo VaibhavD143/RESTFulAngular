@@ -1,5 +1,4 @@
 <!-- <app-test (callAlert)="callAlert()" [name]="name"></app-test> -->
-
 <ng-container>
     <table mat-table [dataSource]="dataSource" matSort class="mat-elevation-z8" width="100%">
         <!-- <ng-container matColumnDef="id">
@@ -55,7 +54,7 @@
         </ng-container> -->
 
         <tr mat-header-row *matHeaderRowDef="columnsToDisplay"></tr>
-        <tr mat-row *matRowDef="let abc; columns: columnsToDisplay;"></tr>
+        <tr mat-row *matRowDef="let element columns: columnsToDisplay;"></tr>
     </table>
     
 </ng-container>
